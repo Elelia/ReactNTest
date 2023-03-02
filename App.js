@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import Test from './src/components/test';
+import Taist from './src/components/taist';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <ScrollView>
+        <StatusBar style="auto" />
+        <Taist/>
+        <Test firstname="Lisa" lastname="Lucas"/>
+      </ScrollView>
     </View>
   );
 }
